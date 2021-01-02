@@ -1,38 +1,281 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-1 {
+  margin-bottom: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-color {
+  background-color: #545454;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.title {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 30px;
+}
+
+.navbar-link {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+.navbar-link:focus {
+  border-bottom: 1px solid white;
+}
+
+.search-bar {
+  background: transparent;
+  margin-left: 2%;
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+  width: 80%;
+}
+
+.search-group {
+  background-color: #fff;
+  border-radius: 25px;
+  border-style: none;
+}
+
+.search-bar:active {
+  outline: none;
+}
+
+.home-1-group {
+  width: 80%;
+  padding-left: 4%;
+}
+
+.loop-text {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  padding-bottom: 6%;
+  padding-top: 10%;
+  color: #545454;
+}
+
+.anonymous {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #717171;
+}
+
+.order-group {
+  margin-top: 6%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.order-link {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  color: #545454;
+}
+
+.cart-image {
+  margin-right: 13px;
+}
+
+.chair-image {
+  margin-top: 20%;
+}
+
+.big-circle {
+  background-image: url("./Images/big-circle.svg");
+  position: relative;
+  /* z-index: -2; */
+  left: 200px;
+}
+
+.home-2 {
+  background-color: #f8f8f8;
+  padding-bottom: 15%;
+}
+
+.home-3 {
+  padding-bottom: 7%;
+}
+
+.collection-title {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: #545454;
+}
+
+.collection-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #545454;
+}
+
+.card-groups {
+  width: 22%;
+  background-color: white;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  box-shadow: 5px 5px #c6c6c6;
+}
+
+.card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  text-align: center;
+  color: #545454;
+  font-weight: 550;
+}
+
+.card-desc {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #545454;
+}
+
+.bag-image {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.offer-bg {
+  background-color: #545454;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.offer-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.categories {
+  padding-top: 7%;
+  width: 85%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categories-desc {
+  width: 50%;
+  padding-left: 5%;
+}
+
+.cat-title {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  color: #545454;
+  font-weight: 500;
+}
+
+.cat-details {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding-bottom: 5%;
+  font-weight: 600;
+  color: #545454;
+}
+.home-4 {
+  background-color: #f8f8f8;
+  padding-bottom: 3%;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
+
+.profileContainer {
+  width: 24%;
+}
+
+.review {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #9a9a9a;
+  text-align: center;
+}
+
+.reviewer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #545454;
+  font-weight: 600;
+}
+
+.home-5 {
+  background-color: #a5a58d;
+}
+
+.first {
+  width: 70%;
+  padding-right: 20%;
+  margin-left: 5%;
+}
+
+.loop-footer {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  /* padding-bottom: 6%;
+  padding-top: 10%; */
+  color: white;
+}
+
+.loop-footer-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  padding-top: 5%;
+}
+
+.information {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  color: white;
+}
+
+.link-footer {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.infoContainer {
+  margin-right: 20%;
+}
+
+.email-input {
+  padding: 10px 20px 10px 50px;
+  outline: none;
+  text-decoration: none;
+  background-image: url('./Images/mail.svg');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+  border-radius: 10px;
+}
+
+.email-input::placeholder {
+  color: #cbcbcb;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.address {
+  width: 80%;
+}
+
+.submitContainer {
+  max-width: max-content;
+  background-color: white;
+  border-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.footer-container {
+  background-color: #7e7e7e;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
