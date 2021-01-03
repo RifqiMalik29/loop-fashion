@@ -8,6 +8,7 @@ import ChairImage from "../../Images/chair.svg";
 import BagImage from "../../Images/bag-image.svg";
 import BigCircle from "../../Images/big-circle.svg";
 import SmallCircle from "../../Images/small-circle.svg";
+import BigCircle2 from "../../Images/big-circle2.svg";
 import ShoesImage from "../../Images/shoes.svg";
 import BagHome3 from "../../Images/bag-home3.svg";
 import Accessories from "../../Images/accessories.svg";
@@ -15,11 +16,77 @@ import JaneDoe from "../../Images/jane-doe.svg";
 import SusanDoe from "../../Images/susan-doe.svg";
 import RebeccaDoe from "../../Images/rebecca-doe.svg";
 import SubmitButton from "../../Images/submit.svg";
+import { useState } from "react";
 
 const Home = () => {
+  const [black, setBlack] = useState(true);
+  const [black2, setBlack2] = useState(true);
+  const [black3, setBlack3] = useState(true);
+  const [bagBlack, setBagBlack] = useState(true);
+  const [bagBlack2, setBagBlack2] = useState(true);
+  const [bagBlack3, setBagBlack3] = useState(true);
+  const [accBlack, setAccBlack] = useState(true);
+  const [accBlack2, setAccBlack2] = useState(true);
+  const [accBlack3, setAccBlack3] = useState(true);
+
+  function clickBlack() {
+    setBlack(true);
+    setBlack2(false);
+    setBlack3(false);
+  }
+
+  const clickBlack2 = () => {
+    setBlack(false);
+    setBlack2(true);
+    setBlack3(false);
+  };
+
+  function clickBlack3() {
+    setBlack(false);
+    setBlack2(false);
+    setBlack3(true);
+  }
+
+  function clickBag() {
+    setBagBlack(true);
+    setBagBlack2(false);
+    setBagBlack3(false);
+  }
+
+  function clickBag2() {
+    setBagBlack(false);
+    setBagBlack2(true);
+    setBagBlack3(false);
+  }
+
+  function clickBag3() {
+    setBagBlack(false);
+    setBagBlack2(false);
+    setBagBlack3(true);
+  }
+
+  function clickAcc() {
+    setAccBlack(true);
+    setAccBlack2(false);
+    setAccBlack3(false);
+  }
+
+  function clickAcc2() {
+    setAccBlack(false);
+    setAccBlack2(true);
+    setAccBlack3(false);
+  }
+
+  function clickAcc3() {
+    setAccBlack(false);
+    setAccBlack2(false);
+    setAccBlack3(true);
+  }
+
   return (
     <>
       <NavbarComponent />
+      {/* <img src={BigCircle} className="big-circle" /> */}
       <div className="home-1 d-flex flex-row">
         <Container>
           <div className="home-1-group mr-auto">
@@ -41,7 +108,7 @@ const Home = () => {
               pretium ac metus quis.
             </div>
             <div className="order-group">
-              <Link to="/order" className="order-link d-flex flex-row">
+              <Link to="/" className="order-link d-flex flex-row">
                 <img
                   src={CartImage}
                   alt="order now cart"
@@ -117,6 +184,29 @@ const Home = () => {
         <div className="categories d-flex flex-row mx-auto">
           <div className="imageContainer">
             <img src={ShoesImage} alt="shoes" className="shoes" />
+            <div className="d-flex justify-content-center">
+              <button
+                onClick={clickBlack}
+                disabled={black ? true : false}
+                className={black ? "black-button" : "slide-button"}
+              >
+                111
+              </button>
+              <button
+                onClick={clickBlack2}
+                disabled={black2 ? true : false}
+                className={black2 ? "black-button mx-4" : "slide-button mx-4"}
+              >
+                111
+              </button>
+              <button
+                onClick={clickBlack3}
+                disabled={black3 ? true : false}
+                className={black3 ? "black-button" : "slide-button"}
+              >
+                111
+              </button>
+            </div>
           </div>
           <div className="categories-desc my-auto">
             <p className="cat-title pb-3">Shoes</p>
@@ -126,7 +216,7 @@ const Home = () => {
               posuere eu, tincidunt eu tortor. Nam id egestas neque. Etiamulla
               mcorper, tortor ut tristique auctor.
             </p>
-            <Link to="/order" className="order-link d-flex flex-row">
+            <Link to="/" className="order-link d-flex flex-row">
               <img
                 src={CartImage}
                 alt="order now cart"
@@ -141,6 +231,31 @@ const Home = () => {
         <div className="categories d-flex flex-row mx-auto">
           <div className="imageContainer">
             <img src={BagHome3} alt="shoes" className="shoes" />
+            <div className="d-flex justify-content-center">
+              <button
+                onClick={clickBag}
+                disabled={bagBlack ? true : false}
+                className={bagBlack ? "black-button" : "slide-button"}
+              >
+                111
+              </button>
+              <button
+                onClick={clickBag2}
+                disabled={bagBlack2 ? true : false}
+                className={
+                  bagBlack2 ? "black-button mx-4" : "slide-button mx-4"
+                }
+              >
+                111
+              </button>
+              <button
+                onClick={clickBag3}
+                disabled={bagBlack3 ? true : false}
+                className={bagBlack3 ? "black-button" : "slide-button"}
+              >
+                111
+              </button>
+            </div>
           </div>
           <div className="categories-desc my-auto">
             <p className="cat-title pb-3">Bag</p>
@@ -150,7 +265,7 @@ const Home = () => {
               posuere eu, tincidunt eu tortor. Nam id egestas neque. Etiamulla
               mcorper, tortor ut tristique auctor.
             </p>
-            <Link to="/order" className="order-link d-flex flex-row">
+            <Link to="/" className="order-link d-flex flex-row">
               <img
                 src={CartImage}
                 alt="order now cart"
@@ -165,6 +280,31 @@ const Home = () => {
         <div className="categories d-flex flex-row mx-auto">
           <div className="imageContainer">
             <img src={Accessories} alt="shoes" className="shoes" />
+            <div className="d-flex justify-content-center">
+              <button
+                onClick={clickAcc}
+                disabled={accBlack ? true : false}
+                className={accBlack ? "black-button" : "slide-button"}
+              >
+                111
+              </button>
+              <button
+                onClick={clickAcc2}
+                disabled={accBlack2 ? true : false}
+                className={
+                  accBlack2 ? "black-button mx-4" : "slide-button mx-4"
+                }
+              >
+                111
+              </button>
+              <button
+                onClick={clickAcc3}
+                disabled={accBlack3 ? true : false}
+                className={accBlack3 ? "black-button" : "slide-button"}
+              >
+                111
+              </button>
+            </div>
           </div>
           <div className="categories-desc my-auto">
             <p className="cat-title pb-3">Accessories</p>
@@ -174,7 +314,7 @@ const Home = () => {
               posuere eu, tincidunt eu tortor. Nam id egestas neque. Etiamulla
               mcorper, tortor ut tristique auctor.
             </p>
-            <Link to="/order" className="order-link d-flex flex-row">
+            <Link to="/" className="order-link d-flex flex-row">
               <img
                 src={CartImage}
                 alt="order now cart"
