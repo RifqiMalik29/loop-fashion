@@ -20,14 +20,14 @@ import { useState } from "react";
 
 const Home = () => {
   const [black, setBlack] = useState(true);
-  const [black2, setBlack2] = useState();
-  const [black3, setBlack3] = useState();
+  const [black2, setBlack2] = useState(false);
+  const [black3, setBlack3] = useState(false);
   const [bagBlack, setBagBlack] = useState(true);
-  const [bagBlack2, setBagBlack2] = useState();
-  const [bagBlack3, setBagBlack3] = useState();
+  const [bagBlack2, setBagBlack2] = useState(false);
+  const [bagBlack3, setBagBlack3] = useState(false);
   const [accBlack, setAccBlack] = useState(true);
-  const [accBlack2, setAccBlack2] = useState();
-  const [accBlack3, setAccBlack3] = useState();
+  const [accBlack2, setAccBlack2] = useState(false);
+  const [accBlack3, setAccBlack3] = useState(false);
 
   function clickBlack() {
     setBlack(true);
@@ -280,7 +280,7 @@ const Home = () => {
         <div className="categories d-flex flex-row mx-auto">
           <div className="imageContainer">
             <img src={Accessories} alt="shoes" className="shoes" />
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center mt-3">
               <button
                 onClick={clickAcc}
                 disabled={accBlack ? true : false}
