@@ -20,14 +20,14 @@ import { useState } from "react";
 
 const Home = () => {
   const [black, setBlack] = useState(true);
-  const [black2, setBlack2] = useState(true);
-  const [black3, setBlack3] = useState(true);
+  const [black2, setBlack2] = useState();
+  const [black3, setBlack3] = useState();
   const [bagBlack, setBagBlack] = useState(true);
-  const [bagBlack2, setBagBlack2] = useState(true);
-  const [bagBlack3, setBagBlack3] = useState(true);
+  const [bagBlack2, setBagBlack2] = useState();
+  const [bagBlack3, setBagBlack3] = useState();
   const [accBlack, setAccBlack] = useState(true);
-  const [accBlack2, setAccBlack2] = useState(true);
-  const [accBlack3, setAccBlack3] = useState(true);
+  const [accBlack2, setAccBlack2] = useState();
+  const [accBlack3, setAccBlack3] = useState();
 
   function clickBlack() {
     setBlack(true);
